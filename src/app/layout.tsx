@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Imperial_Script, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
+const imperialScript = Imperial_Script({
+  variable: "--font-imperial-script",
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
